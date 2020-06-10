@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:id="@+id/layout_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/layout_dataview"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_dataview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/edtext"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <com.coolapps.logomaker.utilities.HorizontalListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/linearLayout" />
+
+        <EditText
+            android:id="@+id/edtext"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/edit_text"
+            android:paddingLeft="10.0dip" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/linearLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <include layout="@layout/layout_tools_text" />
+
+    <!--</LinearLayout>-->
+</LinearLayout>

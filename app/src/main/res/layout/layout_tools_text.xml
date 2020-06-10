@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#151414"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/btn_color"
+        android:layout_width="@dimen/editor_size"
+        android:layout_height="@dimen/editor_size"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_color_fill_white_24px"
+        app:layout_constraintEnd_toStartOf="@+id/btn_shadow"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Color"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_color"
+        app:layout_constraintStart_toStartOf="@+id/btn_color"
+        app:layout_constraintTop_toBottomOf="@+id/btn_color" />
+
+
+    <ImageView
+        android:id="@+id/btn_shadow"
+        android:layout_width="@dimen/editor_size"
+        android:layout_height="@dimen/editor_size"
+        android:layout_margin="4dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_color_lens_white_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_gravity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_color"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Shadow"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_shadow"
+        app:layout_constraintStart_toStartOf="@+id/btn_shadow"
+        app:layout_constraintTop_toBottomOf="@+id/btn_shadow" />
+
+    <ImageView
+        android:id="@+id/btn_gravity"
+        android:layout_width="@dimen/editor_size"
+        android:layout_height="@dimen/editor_size"
+        android:layout_margin="4dp"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_white_gravity"
+        app:layout_constraintEnd_toStartOf="@+id/btn_done"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_shadow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Gravity"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_gravity"
+        app:layout_constraintStart_toStartOf="@+id/btn_gravity"
+        app:layout_constraintTop_toBottomOf="@+id/btn_gravity" />
+
+
+    <ImageView
+        android:id="@+id/btn_done"
+        android:layout_width="@dimen/editor_size"
+        android:layout_height="@dimen/editor_size"
+        android:layout_margin="4dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_done_white_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_gravity"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Done"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_done"
+        app:layout_constraintStart_toStartOf="@+id/btn_done"
+        app:layout_constraintTop_toBottomOf="@+id/btn_done" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

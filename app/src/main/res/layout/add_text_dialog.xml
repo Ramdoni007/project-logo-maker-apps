@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip">
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/ic_close" />
+
+        <TextView
+            android:id="@+id/txtCurrentTool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="8dp"
+            android:text="Add Text"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imgSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:paddingTop="8dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_save" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlauto"
+        android:layout_width="fill_parent"
+        android:layout_height="150.0dip"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/afltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:textColor="#ffffffff"
+            android:textSize="40.0sp"
+            autofit:minTextSize="10.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lltext"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_below="@+id/rlauto"
+        android:orientation="horizontal"
+        android:weightSum="5.0">
+
+        <ImageView
+            android:id="@+id/ivchangetext"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:padding="10.0dip"
+            android:src="@drawable/ictype" />
+
+        <ImageView
+            android:id="@+id/ivchangefont"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:padding="10.0dip"
+            android:src="@drawable/icfont" />
+
+        <ImageView
+            android:id="@+id/ivchangecolor"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:padding="10.0dip"
+            android:src="@drawable/iccolor" />
+
+        <ImageView
+            android:id="@+id/ivcircle"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:padding="10.0dip"
+            android:src="@drawable/iccircle" />
+
+        <ImageView
+            android:id="@+id/ivalign"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:padding="10.0dip"
+            android:src="@drawable/iccentertextalignment" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvtext"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_below="@+id/lltext"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edtext"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_below="@+id/lltext"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/edit_text"
+        android:paddingLeft="10.0dip" />
+
+</RelativeLayout>

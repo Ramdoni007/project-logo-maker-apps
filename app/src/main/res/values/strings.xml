@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Logo Maker</string>
+    <string name="label_art">Art</string>
+    <string name="label_text">Text</string>
+    <string name="label_effect">Effect</string>
+    <string name="label_sticker">Sticker</string>
+    <string name="label_bg">Background</string>
+    <string name="over_text_limit">Double</string>
+    <string name="double_click_input_text">Double click to edit</string>
+
+    <string name="permission">Permission</string>
+    <string name="permission_camera_not_granted_dialog_message">Please allow CAMERA permission</string>
+    <string name="permission_write_external_storage_not_granted_dialog_message">Please allow STORAGE permission.</string>
+    <string name="please_wait_dialog_title">Please wait</string>
+    <string name="loading_dialog_message">Loading...</string>
+
+
+</resources>
